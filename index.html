@@ -1,51 +1,16 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Untuk Diyyah ❤️</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-      font-family: Arial, sans-serif;
-      color: white;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 2.5em;
-      animation: fadeIn 3s ease-in-out;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+  <title>Backsound</title>
 </head>
 <body>
-  <div>
-    <h1>Hai Diyyah ❤️<br>Ini ada sesuatu buat kamu...</h1>
-  </div>
-
-  <!-- Musik otomatis -->
-  <audio id="bg-music" autoplay loop>
-    <source src="https://raw.githubusercontent.com/Titanalbar/backsound-1/main/backsound.mp3" type="audio/mpeg">
+  <h1>Testing Backsound</h1>
+  
+  <audio autoplay loop controls>
+    <source src="barasuara.mp3" type="audio/mpeg">
     Browser kamu tidak mendukung audio.
   </audio>
-
-  <script>
-    // Autoplay butuh klik user di beberapa browser
-    document.addEventListener("click", () => {
-      const music = document.getElementById("bg-music");
-      if (music.paused) {
-        music.play();
-      }
-    });
-  </script>
 </body>
 </html>
